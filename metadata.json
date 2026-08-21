@@ -1,0 +1,7 @@
+{
+  "name": "PDF Study AI",
+  "description": "Học và làm chủ bất kỳ cuốn sách PDF nào với trợ lý AI Gemini: tóm tắt chuyên sâu, flashcard, trắc nghiệm, gia sư AI và sơ đồ tư duy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

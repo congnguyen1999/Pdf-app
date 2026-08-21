@@ -1,0 +1,18 @@
+package com.example.data.api
+
+import com.example.data.model.GeminiApiRequest
+import com.example.data.model.GeminiApiResponse
+import retrofit2.http.Body
+import retrofit2.http.POST
+import retrofit2.http.Path
+import retrofit2.http.Query
+
+interface GeminiApiService {
+
+    @POST("v1beta/models/{model}:generateContent")
+    suspend fun generateContent(
+        @Path("model") model: String,
+        @Query("key") apiKey: String,
+        @Body request: GeminiApiRequest
+    ): GeminiApiResponse
+}
